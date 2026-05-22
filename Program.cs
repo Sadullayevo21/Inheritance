@@ -1,31 +1,78 @@
 ﻿using Models.Animals;
 using Models.Transports;
+using Models.Employee;
+using Models.Person;
 
 var cat = new Cat
 {
     Name = "Murka"
 };
 
+cat.Eat();
+cat.Meowing();
+
 var dog = new Dog
 {
     Name = "Rex"
 };
 
-cat.Eat();
-cat.Meowing();
 dog.Eat();
 dog.Bark();
 
 
-Car car = new Car();
-car.Brand = "Mercedes";
+var car = new Car
+{
+    Brand = "Mercedes"
+};
+
 car.Move();
 car.Drive();
-Bike bike = new Bike();
-bike.Brand = "Giant";
+
+var bike = new Bike
+{
+    Brand = "Giant"
+};
+
 bike.Move();
 bike.Ride();
-Train train = new Train();
-train.Brand = "Afrosiyob";
+
+var train = new Train
+{
+    Brand = "Afrosiyob"
+};
+
 train.Move();
 train.CarryPassengers();
+
+
+var developer = new Developer
+{
+    Name = "John",
+    Salary = 1000
+};
+
+developer.Work();
+developer.Code();
+
+var teacher = new Teacher
+{
+    Name = "Alex",
+    Salary = 700
+};
+
+teacher.Work();
+teacher.Teach();
+
+var designer = new Designer
+{
+    Name = "Jek",
+    Salary = 850
+};
+
+designer.Work();
+designer.Design();
+
+
+Student student = new Student("Ali", 5);
+Models.Person.Teacher teachers =
+    new Models.Person.Teacher("Hasan", "Math");

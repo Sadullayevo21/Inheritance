@@ -6,6 +6,6 @@ class Transport
 
 	public void Move()
 	{
-		Console.WriteLine("Vehicle is moving");
+		Console.WriteLine($"Vehicle is moving");
 	}
 }
